@@ -118,11 +118,40 @@ public class Exercicios {
         double g = r * 180 / 3.14;
         System.out.printf("%.2f equivale a %.2f graus\n", r, g);
     }
-    //16. Leia um valor em comprimento e converta para polegadas. C = P × 2.54
+    //16. Leia um valor em polegadas e converta em centimetros. C = P × 2.54
     public static void ex16(Scanner sc){
         System.out.println("Comprimento em polegadas: ");
         double p = sc.nextDouble();
         double c = p * 2.54;
         System.out.printf("%.2f equivale a %.2f centimetros\n", p, c);
+    }
+    //16. Leia um valor em centimetros e converta para polegadas. P = C / 2.54
+    public static void ex17(Scanner sc){
+        System.out.println("Comprimento em centimetros: ");
+        double c = sc.nextDouble();
+        double p = c / 2.54;
+        System.out.printf("%.2f equivale a %.2f polegadas\n", p, c);
+    }
+
+    //Leia um volume em metros cubicos e converta para litros. L = 1000 * M
+    public static void ex18( Scanner sc){
+        System.out.println("Volume em metros cúbicos: ");
+        double mc = sc.nextDouble();
+        double l = 1000 * mc;
+        System.out.printf("%.2f equivale a %.2f litros\n", mc, l);
+    }
+    //Leia um volume em litros e converta para metros cubicos. M = l /1000
+    public static void ex19( Scanner sc){
+        System.out.println("Volume em Litros: ");
+        double l = sc.nextDouble();
+        double mc = l / 1000;
+        System.out.printf("%.2f equivale a %.2f metros cúbicos\n", l, mc);
+    }
+    //Leia uma massa em quilogramas e converta para libras. L = K/ 0.45
+    public static void ex20( Scanner sc){
+        System.out.println("Massa em quilogramas: ");
+        double m = sc.nextDouble();
+        double l = m / 0.45;
+        System.out.printf("%.2f equivale a %.2f libras\n", m, l);
     }
 }
